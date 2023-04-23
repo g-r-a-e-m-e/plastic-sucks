@@ -1,5 +1,5 @@
 import sdmx
-import pandas as pd
 
-path = 'PLASTIC_USE_9.xml'
-oecd = sdmx.read_sdmx(path)
+PATH = 'data/PLASTIC_USE_9.xml'
+data = sdmx.read_sdmx(filename_or_obj = PATH, format = 'XML')
+data.to_pandas()
